@@ -66,21 +66,39 @@ function ConversionChaineTableau(reseaux_sociaux_chaine){
 
 function ConversionTableauChaine(langages){
 
-    /*Je crèe un tableau vide*/
-    var langages_chaine = [];
+    var langages_chaine;
+    var tab_string = langages.toString();
+    langages_chaine= tab_to_string;
     
-    for(var i=0; i<langages.length; i++){
-        var test = langages[i];
-        langages_chaine.push(test+",")
-        
-        console.log(test);
-    }
-    
-    console.log(test);
-    /*langages_chaine.push(liste);*/
-    
+    /*console.log(tab_to_string);*/   
     /*console.log(langages_chaine);*/
+    return langages_chaine;    
+}
+
+function TriTableau(reseaux_sociaux){
+    reseaux_sociaux.sort();
+    console.log(reseaux_sociaux);
+    return reseaux_sociaux; 
+}
+
+/*Hey I'm in Bonus*/
+
+function InversionTableau(langages){
+    langages.reverse();
+    return langages;
+}
+
+function TriSpecial(langages){
     
-    return langages_chaine;
+    var tab = [];
     
+for(var i = 0; i < langages.length; i++ ){
+    var taille = langages[i].length;
+    console.log(taille);
+    if(0<taille){
+        tab.push(taille);
+        console.log(tab);
+    }
+}
+    return tab
 }

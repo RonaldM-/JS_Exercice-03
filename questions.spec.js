@@ -47,17 +47,17 @@ it('Ajouter "-2" et "-1" au début du tableau nombres', function () {
       var reseaux_sociaux = TriTableau(reseaux_sociaux);
       expect(reseaux_sociaux).toEqual(['Facebook','Google +','LinkedIn','Twitter','Viadeo']);
   });
-  /**************** BONUS 
+  /**************** BONUS ************************/
   it('Inverser le tableau "langages"', function () {
       var langages = ['CSS','Javascript','PHP','Ruby'];
       var langages = InversionTableau(langages);
       expect(langages).toEqual(["Ruby", "PHP", "Javascript", "CSS"]);
   });
-  it('Ordonnez le table "languages" en fonction du nombre de caractères présents dans la chaine' fuction(){
+  it('Ordonnez le table "languages" en fonction du nombre de caractères présents dans la chaine' function(){
       var langages = ['C#','Javascript','PHP','Ruby'];
       var langages = TriSpecial(langages);
       expect(langages).toEqual(["C#", "PHP", "Ruby", "Javascript"]);
   });
 
-************************/
+
 });
