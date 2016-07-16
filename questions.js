@@ -67,7 +67,7 @@ function ConversionChaineTableau(reseaux_sociaux_chaine){
 function ConversionTableauChaine(langages){
 
     var langages_chaine;
-    var tab_string = langages.toString();
+    var tab_to_string = langages.toString();
     langages_chaine= tab_to_string;
     
     /*console.log(tab_to_string);*/   
@@ -90,15 +90,13 @@ function InversionTableau(langages){
 
 function TriSpecial(langages){
     
-    var tab = [];
-    
-for(var i = 0; i < langages.length; i++ ){
-    var taille = langages[i].length;
-    console.log(taille);
-    if(0<taille){
-        tab.push(taille);
-        console.log(tab);
-    }
-}
-    return tab
-}
+        langages.sort(function(a, b) {
+            console.log("valeur de a "+ a);
+            console.log("valeur de b "+ b);
+        return a.length + b.length;
+        
+        
+    });
+    console.log(langages)
+    return langages;
+ }
